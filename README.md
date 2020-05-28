@@ -1,68 +1,26 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# (Project Title)
 
-## Available Scripts
+Created by David Sasser, [GithHub Link](https://github.com/davidsasser)
+Source code: https://github.com/davidsasser/pomodoro-app
 
-In the project directory, you can run:
+## Summary
 
-### `npm start`
+I created a Pomodoro plus White Noise web application using Node and React. A user can customize the timer to be the right interval for them up to one hour. There are options to choose any sort of audio that a user would like to listen to while focusing on their tasks. Once the timer ends if there was audio playing it will stop, and there is an option to check if a user wants an audio alert when the timer has ended. Other customization options such as background images have been added for a user to select.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+(Insert any pictures or screenshots of your final project here)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Inspiration
 
-### `npm test`
+I had never heard of the Pomodoro technique until watching Mayuko's streams. I like the concept and wanted to build something with respect to that idea. I knew during this event I wanted to learn a new technology, and React has been one I have been meaning to learn for a while so I figured this was the perfect time.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Challenges
 
-### `npm run build`
+I am in the process of job searching so I did not get to spend as much time as I was hoping to on the project, but I enjoyed the time I did get to join the stream and code with friends. Also, there is also that learning curve of learning a new technology, but I love learning new things so I found the challenge to be fun.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Reflections
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+1. I learned React during this event. As well as implementing the Pomodoro technique especially during the streams really helped me to focus on my tasks.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Hopefully next time I can commit more time to the event and build something a bit bigger a bit more robust.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+3. Using a timer to breakdown periods in which to focus was very helpful. Also, some reasources on YouTube were very helpful with learning React.

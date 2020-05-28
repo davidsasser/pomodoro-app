@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import PauseIcon from '@material-ui/icons/Pause';
-import functions from '../utils/formatTimer';
 
 class Timer extends Component {
 
@@ -14,8 +13,16 @@ class Timer extends Component {
             isPaused: true
         }
         this.playPauseTimer = this.playPauseTimer.bind(this);
+        this.resetTimer = this.resetTimer.bind(this);
     }
 
+    resetTimer() {
+        this.setState({
+            hasStarted: false,
+            timer: null,
+            isPaused: true
+        })
+    }
 
     playPauseTimer() {
         if (!this.state.hasStarted) {
@@ -31,11 +38,15 @@ class Timer extends Component {
             })
             this.myInterval = setInterval(() => {
                 if (this.state.timer === 0) {
+
                     clearInterval(this.myInterval)
+                    this.resetTimer()
                 }
-                this.setState(prevState => ({
-                    timer: prevState.timer - 1
-                }))
+                else {
+                    this.setState(prevState => ({
+                        timer: prevState.timer - 1
+                    }))
+                }
             }, 1000);
         }
         else {
@@ -65,7 +76,8 @@ class Timer extends Component {
         }
         return (
             <div className="timer-container">
-                <h1>{timer}</h1><button className="play-pause" onClick={this.playPauseTimer}>{button}</button>
+                <h1>{timer}</h1>
+                <button className="play-pause" onClick={this.playPauseTimer}>{button}</button>
             </div>
         )
     }

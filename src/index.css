@@ -1,5 +1,5 @@
 body {
-  background-image: url(./assets/images/VgfearC.gif);
+  background-image: url(./assets/images/Mount-Susana-Time-Lapse.gif);
   background-repeat: no-repeat;
   background-size: 1920px;
   margin: 0;
@@ -16,23 +16,6 @@ code {
     monospace;
 }
 
-.App {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
-}
-
-#root {
-  height: 100%;
-  position: relative;
-}
-
-html {
-  height: 100%;
-}
-
 .timer-container h1 {
   text-align: center;
   font-size: 4rem;
@@ -42,18 +25,73 @@ html {
 
 .timer-container {
   display: flex;
+  justify-content: center;
 }
 
 .play-pause {
   height: 70px;
   width: 70px;
-  margin: auto;
+  margin: auto 16px;
   background-color: transparent;
   border: 1px solid black;
   border-radius: 50%;
+  cursor: pointer;
+}
+
+.play-pause:hover, .play-pause:active {
+  border: 2px solid black;
+  padding-left: 5px;
 }
 
 .play-pause svg {
   padding-top: 4px;
   font-size: 3.5rem;
+}
+.row1, .row2 {
+      justify-content: center;
+      display: flex;
+}
+
+.row1 .audio-container:not(:last-child), .row2 .audio-container:not(:last-child) {
+  margin-right: 10px;
+}
+
+.image-container img {
+  width: 200px;
+  height: 150px;
+} 
+
+.image-container {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+} 
+
+.audio-container button {
+  background-color: rgb(0,0,0,0.4);
+  border-radius: 10px;
+  display: grid;
+}
+
+.audio-container button:hover, .audio-container button:active {
+  background-color: rgb(0,0,0,0.7);
+}
+
+.image-container label {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+button.selected {
+  background-color: rgb(0,0,0,0.7);
+}
+
+button:focus {
+  outline:0;
+}
+
+audio {
+  display: none;
 }
