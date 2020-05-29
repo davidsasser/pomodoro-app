@@ -1,14 +1,11 @@
 import React from 'react';
-import Timer from './components/Timer'
-import Audio from './components/Audio'
-import AudioSelection from './components/AudioSelection'
+import HomeContainer from './containers/HomeContainer';
 
 function App() {
 
   return (
     <div className="App">
-      <Timer />
-      <AudioSelection />
+      <HomeContainer />
     </div>
   );
 }

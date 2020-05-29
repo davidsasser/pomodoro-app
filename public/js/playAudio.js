@@ -1,5 +1,9 @@
 $(document).ready(function () {
-    $('button.image-container').click(function () {
-        console.log($(this))
-    });
+    $('button.on-top').hover(
+        function () {
+            $('button.underneath').css('opacity', '0.5');
+        }, function () {
+            $('button.underneath').css('opacity', '0');
+        }
+    );
 });

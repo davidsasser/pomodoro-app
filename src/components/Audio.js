@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
-import rain from '../assets/sounds/rain.mp3'
+
 
 class Audio extends Component {
+
     render() {
+
         return (
-            <div>
-                <audio src={rain} controls></audio>
+            <div className="audio-play-pause-container">
+                <button className="audio-play-pause" onClick={this.props.playPauseAudio}>{this.props.button}</button>
             </div>
         )
     }
+
+
 }
 
 export default Audio
