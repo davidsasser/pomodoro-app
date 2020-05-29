@@ -1,4 +1,4 @@
-# (Project Title)
+# Pomodoro Sound Focus
 
 Created by David Sasser, [GithHub Link](https://github.com/davidsasser)
 Source code: https://github.com/davidsasser/pomodoro-app
